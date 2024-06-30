@@ -1,4 +1,4 @@
 {{- define "set-global-a" -}}
-{{- $value := "60" -}}
-{{- $_ := set .Values.global "a" $value -}}
+{{- $randomStr := randAlphaNum 5 -}}
+{{- $_ := set .Values.global "a" $randomStr -}}
 {{- end -}}
