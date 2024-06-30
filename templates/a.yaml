@@ -1,0 +1,8 @@
+{{ include "set-global-a" . }}
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: file-a
+data:
+  my-value: "{{ .Values.global.a }}"
